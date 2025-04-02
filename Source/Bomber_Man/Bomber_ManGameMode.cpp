@@ -9,7 +9,7 @@
 #include "MuroLadrillo.h"
 ABomber_ManGameMode::ABomber_ManGameMode()
 {
-	// set default pawn class to our Blueprinted character
+
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter"));
 	if (PlayerPawnBPClass.Class != NULL)
 	{
@@ -20,12 +20,14 @@ ABomber_ManGameMode::ABomber_ManGameMode()
 void ABomber_ManGameMode::BeginPlay()
 {
 	Super::BeginPlay();
-    FVector Posicion = FVector(110.0f, -1250.0f, 180.0f);
-	SpawnMuroAcero(Posicion);
-	FVector Posicion2 = FVector(210.0f, -1350.0f, 180.0f);
-	SpawnMuroLadrillo(Posicion2);
-	FVector Posicion3 = FVector(110.0f, -1150.0f, 180.0f);
-	SpawnMuroAcero(Posicion3);
+    //FVector Posicion = FVector(110.0f, -1250.0f, 180.0f);
+	//SpawnMuroAcero(Posicion);
+	//FVector Posicion2 = FVector(210.0f, -1350.0f, 180.0f);
+	//SpawnMuroLadrillo(Posicion2);
+	//FVector Posicion3 = FVector(110.0f, -1150.0f, 180.0f);
+	//SpawnMuroAcero(Posicion3);
+	FVector Posicion = FVector(110.0f, -1250.0f, 180.0f);
+    SpawnMuros();
 }
 
 void ABomber_ManGameMode::SpawnMuroAcero(FVector Posicion)
@@ -62,35 +64,27 @@ void ABomber_ManGameMode::SpawnMuros()
 {
     GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Muros spawneados"));
 
-    // Dimensiones de cada celda
-    FVector Posicion = FVector(110.0f, -1250.0f, 180.0f);
-    float Espaciado = 100.0f;
+    float Espaciado = 200.0f;
 
-    // Iterar sobre la matriz y spawnear muros
+
     for (int32 i = 0; i < Laberinto1.Num(); i++)
     {
         for (int32 j = 0; j < Laberinto1[i].Num(); j++)
         {
-            int32 TipoMuro = Laberinto1[i][j];
-            FVector SpawnLocation = Posicion + FVector(i * Espaciado, j * Espaciado, 0.0f);
+            FVector Posicion(j * Espaciado, i * Espaciado, 0.0f);
 
-            // Spawnear el muro según su tipo
-            switch (TipoMuro)
-            {
-            case 1:
-                SpawnMuroBurbuja(Posicion);
-                break;
-            case 2:
-                SpawnMuroLadrillo(Posicion);
-                break;
-            case 3:
-                SpawnMuroMadera(Posicion);
-                break;
-            case 4:
+            if (Laberinto1[i][j] == 1) {
                 SpawnMuroAcero(Posicion);
-                break;
-            default:
-                break;
+            }
+            else if (Laberinto1[i][j] == 2) {
+                SpawnMuroMadera(Posicion);
+            }
+            else if (Laberinto1[i][j] == 3) {
+                SpawnMuroBurbuja(Posicion);
+            }
+            else if (Laberinto1[i][j] == 4) {
+                SpawnMuroLadrillo(Posicion);
+
             }
         }
     }
