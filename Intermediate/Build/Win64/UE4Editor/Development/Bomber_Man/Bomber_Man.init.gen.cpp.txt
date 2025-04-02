@@ -1,0 +1,3 @@
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Development\Bomber_Man\Definitions.Bomber_Man.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

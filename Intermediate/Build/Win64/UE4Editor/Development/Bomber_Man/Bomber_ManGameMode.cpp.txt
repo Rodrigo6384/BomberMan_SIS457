@@ -1,0 +1,25 @@
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Development\Bomber_Man\Definitions.Bomber_Man.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\Bomber_ManGameMode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\Bomber_ManGameMode.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\Bomber_ManCharacter.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\Bomber_ManCharacter.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroMadera.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\Muro.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\Muro.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroMadera.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroAcero.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroAcero.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroBurbuja.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroBurbuja.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroLadrillo.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroLadrillo.generated.h

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Bomber_Man",
+			"Path": "C:\\Users\\DAVID\\Desktop\\SIS_457\\Bomber_Man\\Source\\Bomber_Man.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Bomber_ManEditor",
+			"Path": "C:\\Users\\DAVID\\Desktop\\SIS_457\\Bomber_Man\\Source\\Bomber_ManEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
