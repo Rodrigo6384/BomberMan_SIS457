@@ -20,13 +20,12 @@ ABomber_ManGameMode::ABomber_ManGameMode()
 void ABomber_ManGameMode::BeginPlay()
 {
 	Super::BeginPlay();
-    //FVector Posicion = FVector(110.0f, -1250.0f, 180.0f);
-	//SpawnMuroAcero(Posicion);
-	//FVector Posicion2 = FVector(210.0f, -1350.0f, 180.0f);
-	//SpawnMuroLadrillo(Posicion2);
-	//FVector Posicion3 = FVector(110.0f, -1150.0f, 180.0f);
-	//SpawnMuroAcero(Posicion3);
-    SpawnMuros();
+    FVector Posicion = FVector(110.0f, -1250.0f, 180.0f);
+	SpawnMuroAcero(Posicion);
+	FVector Posicion2 = FVector(210.0f, -1350.0f, 180.0f);
+	SpawnMuroLadrillo(Posicion2);
+	FVector Posicion3 = FVector(110.0f, -1150.0f, 180.0f);
+	SpawnMuroAcero(Posicion3);
 }
 
 void ABomber_ManGameMode::SpawnMuroAcero(FVector Posicion)
