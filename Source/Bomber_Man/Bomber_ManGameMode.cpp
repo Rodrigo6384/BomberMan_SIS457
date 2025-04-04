@@ -7,6 +7,12 @@
 #include "MuroAcero.h"
 #include "MuroBurbuja.h"
 #include "MuroLadrillo.h"
+#include "MuroElectrico.h"
+#include "MuroHielo.h"
+#include "MuroHongo.h"
+#include "MuroArena.h"
+#include "MuroConcreto.h"
+#include "MuroLava.h"
 ABomber_ManGameMode::ABomber_ManGameMode()
 {
 
@@ -20,14 +26,48 @@ ABomber_ManGameMode::ABomber_ManGameMode()
 void ABomber_ManGameMode::BeginPlay()
 {
 	Super::BeginPlay();
-    //FVector Posicion = FVector(110.0f, -1250.0f, 180.0f);
+   // FVector Posicion = FVector(110.0f, -1250.0f, 180.0f);
 	//SpawnMuroAcero(Posicion);
 	//FVector Posicion2 = FVector(210.0f, -1350.0f, 180.0f);
 	//SpawnMuroLadrillo(Posicion2);
 	//FVector Posicion3 = FVector(110.0f, -1150.0f, 180.0f);
 	//SpawnMuroAcero(Posicion3);
-	FVector Posicion = FVector(110.0f, -1250.0f, 180.0f);
-    SpawnMuros();
+	//FVector Posicion = FVector(110.0f, -1250.0f, 190.0f);
+    //SpawnMuros();
+	for (int i = 1; i <= 50; i++) {
+		for (int j = 1; j <= 50; j++) {
+			if (Laberinto1[i - 1][j - 1] == 1) {
+				AMuroAcero* bloque = GetWorld()->SpawnActor<AMuroAcero>(AMuroAcero::StaticClass(), FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f), FRotator(0.0f, 0.0f, 0.0f));
+			}
+			else if (Laberinto1[i - 1][j - 1] == 2) {
+				AMuroLadrillo* bloque1 = GetWorld()->SpawnActor<AMuroLadrillo>(AMuroLadrillo::StaticClass(), FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f), FRotator(0.0f, 0.0f, 0.0f));
+			}
+			else if (Laberinto1[i - 1][j - 1] == 3) {
+				AMuroMadera* bloque2 = GetWorld()->SpawnActor<AMuroMadera>(AMuroMadera::StaticClass(), FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f), FRotator(0.0f, 0.0f, 0.0f));
+			}
+			else if (Laberinto1[i - 1][j - 1] == 4) {
+				AMuroBurbuja* bloque3 = GetWorld()->SpawnActor<AMuroBurbuja>(AMuroBurbuja::StaticClass(), FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f), FRotator(0.0f, 0.0f, 0.0f));
+			}
+			if (Laberinto1[i - 1][j - 1] == 5) {
+				AMuroElectrico* bloque4 = GetWorld()->SpawnActor<AMuroElectrico>(AMuroElectrico::StaticClass(), FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f), FRotator(0.0f, 0.0f, 0.0f));
+			}
+			else if (Laberinto1[i - 1][j - 1] == 6) {
+				AMuroHongo* bloque5 = GetWorld()->SpawnActor<AMuroHongo>(AMuroHongo::StaticClass(), FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f), FRotator(0.0f, 0.0f, 0.0f));
+			}
+			else if (Laberinto1[i - 1][j - 1] == 7) {
+				AMuroLava* bloque6 = GetWorld()->SpawnActor<AMuroLava>(AMuroLava::StaticClass(), FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f), FRotator(0.0f, 0.0f, 0.0f));
+			}
+			else if (Laberinto1[i - 1][j - 1] == 8) {
+				AMuroConcreto* bloque7 = GetWorld()->SpawnActor<AMuroConcreto>(AMuroConcreto::StaticClass(), FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f), FRotator(0.0f, 0.0f, 0.0f));
+			}
+			if (Laberinto1[i - 1][j - 1] == 9) {
+				AMuroArena* bloque8 = GetWorld()->SpawnActor<AMuroArena>(AMuroArena::StaticClass(), FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f), FRotator(0.0f, 0.0f, 0.0f));
+			}
+			else if (Laberinto1[i - 1][j - 1] == 10) {
+				AMuroHielo* bloque9 = GetWorld()->SpawnActor<AMuroHielo>(AMuroHielo::StaticClass(), FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f), FRotator(0.0f, 0.0f, 0.0f));
+			}
+		}
+	}
 }
 
 void ABomber_ManGameMode::SpawnMuroAcero(FVector Posicion)
@@ -64,25 +104,25 @@ void ABomber_ManGameMode::SpawnMuros()
 {
     GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Muros spawneados"));
 
-    float Espaciado = 200.0f;
+    //float Espaciado = 200.0f;
 
 
-    for (int32 i = 0; i < Laberinto1.Num(); i++)
+    for (int i = 0; i < 6; i++)
     {
-        for (int32 j = 0; j < Laberinto1[i].Num(); j++)
+        for (int j = 0; j < 8; j++)
         {
-            FVector Posicion(j * Espaciado, i * Espaciado, 0.0f);
+            FVector Posicion(110.0f + i * 200.0f, -1250.0f + j * 200.0f, 190.0f);
 
-            if (Laberinto1[i][j] == 1) {
+            if (Laberinto1[i-1][j-1] == 1) {
                 SpawnMuroAcero(Posicion);
             }
-            else if (Laberinto1[i][j] == 2) {
+            else if (Laberinto1[i-1][j-1] == 2) {
                 SpawnMuroMadera(Posicion);
             }
-            else if (Laberinto1[i][j] == 3) {
+            else if (Laberinto1[i-1][j-1] == 3) {
                 SpawnMuroBurbuja(Posicion);
             }
-            else if (Laberinto1[i][j] == 4) {
+            else if (Laberinto1[i-1][j-1] == 4) {
                 SpawnMuroLadrillo(Posicion);
 
             }

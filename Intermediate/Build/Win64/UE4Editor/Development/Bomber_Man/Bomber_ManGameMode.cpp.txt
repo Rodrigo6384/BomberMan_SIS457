@@ -23,3 +23,15 @@ C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroBurbuja.h
 C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroBurbuja.generated.h
 C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroLadrillo.h
 C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroLadrillo.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroElectrico.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroElectrico.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroHielo.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroHielo.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroHongo.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroHongo.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroArena.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroArena.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroConcreto.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroConcreto.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroLava.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroLava.generated.h
