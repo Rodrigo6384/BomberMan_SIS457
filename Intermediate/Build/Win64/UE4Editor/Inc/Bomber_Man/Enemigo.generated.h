@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef BOMBER_MAN_Enemigo_generated_h
 #error "Enemigo.generated.h already included, missing '#pragma once' in Enemigo.h"
 #endif
 #define BOMBER_MAN_Enemigo_generated_h
 
 #define Bomber_Man_Source_Bomber_Man_Enemigo_h_12_SPARSE_DATA
-#define Bomber_Man_Source_Bomber_Man_Enemigo_h_12_RPC_WRAPPERS
-#define Bomber_Man_Source_Bomber_Man_Enemigo_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define Bomber_Man_Source_Bomber_Man_Enemigo_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
+#define Bomber_Man_Source_Bomber_Man_Enemigo_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
 #define Bomber_Man_Source_Bomber_Man_Enemigo_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEnemigo(); \
@@ -58,7 +69,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AEnemigo)
 
 
-#define Bomber_Man_Source_Bomber_Man_Enemigo_h_12_PRIVATE_PROPERTY_OFFSET
+#define Bomber_Man_Source_Bomber_Man_Enemigo_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__MallaEnemigo() { return STRUCT_OFFSET(AEnemigo, MallaEnemigo); }
+
+
 #define Bomber_Man_Source_Bomber_Man_Enemigo_h_9_PROLOG
 #define Bomber_Man_Source_Bomber_Man_Enemigo_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

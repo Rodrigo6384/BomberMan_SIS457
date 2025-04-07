@@ -35,3 +35,17 @@ C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroConcreto.h
 C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroConcreto.generated.h
 C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\MuroLava.h
 C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\MuroLava.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\Enemigo.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\Enemigo.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\EnemigoSubterraneo.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\EnemigoSubterraneo.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\EnemigoSubterraneoTopo.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\EnemigoSubterraneoTopo.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\EnemigoSubterraneoGusano.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\EnemigoSubterraneoGusano.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\EnemigoAereo.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\EnemigoAereo.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\Plataforma.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\Plataforma.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\PlataformaElevador.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\PlataformaElevador.generated.h

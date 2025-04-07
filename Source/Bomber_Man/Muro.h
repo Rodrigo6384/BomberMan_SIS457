@@ -10,16 +10,11 @@ UCLASS()
 class BOMBER_MAN_API AMuro : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	AMuro();
-
-	UStaticMeshComponent* MallaMuro;
-
 protected:
 	// Called when the game starts or when spawned
+	AMuro();
 	virtual void BeginPlay() override;
+	UStaticMeshComponent* MallaMuro;
 
 public:	
 	// Called every frame

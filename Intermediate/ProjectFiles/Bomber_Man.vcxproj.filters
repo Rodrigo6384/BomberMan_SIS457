@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Bomber_Man.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{BAEDA8B2-B8BE-432D-BD9D-916D08D437F7}</UniqueIdentifier>
+      <UniqueIdentifier>{DCE46ED6-A58F-42E1-8E2B-0EEE9B840987}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Bomber_Man.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{6328FEBA-94D8-4282-8496-D6FFC82774C8}</UniqueIdentifier>
+      <UniqueIdentifier>{72C0CC46-AD4F-45B3-9E00-A2C25A05B4E7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Bomber_Man">
-      <UniqueIdentifier>{DC5B2979-6330-46D4-9C32-5D794542C4E0}</UniqueIdentifier>
+      <UniqueIdentifier>{BA06E3E0-E5A3-4D29-A38D-53F5F9DEA70F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Bomber_Man\Bomber_Man.Build.cs">
       <Filter>Source\Bomber_Man</Filter>
@@ -59,6 +59,42 @@
       <Filter>Source\Bomber_Man</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Bomber_Man\Enemigo.h">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bomber_Man\EnemigoAereo.cpp">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bomber_Man\EnemigoAereo.h">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bomber_Man\EnemigoAereoAguila.cpp">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bomber_Man\EnemigoAereoAguila.h">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bomber_Man\EnemigoAereoBombardero.cpp">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bomber_Man\EnemigoAereoBombardero.h">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bomber_Man\EnemigoSubterraneo.cpp">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bomber_Man\EnemigoSubterraneo.h">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bomber_Man\EnemigoSubterraneoGusano.cpp">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bomber_Man\EnemigoSubterraneoGusano.h">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bomber_Man\EnemigoSubterraneoTopo.cpp">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bomber_Man\EnemigoSubterraneoTopo.h">
       <Filter>Source\Bomber_Man</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Bomber_Man\Muro.cpp">
@@ -125,6 +161,18 @@
       <Filter>Source\Bomber_Man</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Bomber_Man\MuroMadera.h">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bomber_Man\Plataforma.cpp">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bomber_Man\Plataforma.h">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bomber_Man\PlataformaElevador.cpp">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bomber_Man\PlataformaElevador.h">
       <Filter>Source\Bomber_Man</Filter>
     </ClInclude>
   </ItemGroup>

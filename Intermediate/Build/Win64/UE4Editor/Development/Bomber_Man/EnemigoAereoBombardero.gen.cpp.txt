@@ -1,0 +1,15 @@
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Development\Bomber_Man\Definitions.Bomber_Man.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man/EnemigoAereoBombardero.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\EnemigoAereo.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\Enemigo.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\Enemigo.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\EnemigoAereo.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\EnemigoAereoBombardero.generated.h
