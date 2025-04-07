@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Bomber_Man.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{DCE46ED6-A58F-42E1-8E2B-0EEE9B840987}</UniqueIdentifier>
+      <UniqueIdentifier>{BA2CFB56-0AB5-4D2C-85FC-9BAD200AADC5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Bomber_Man.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{72C0CC46-AD4F-45B3-9E00-A2C25A05B4E7}</UniqueIdentifier>
+      <UniqueIdentifier>{5FCCB9EC-48B6-4B24-BB31-A74AFB3B0396}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Bomber_Man">
-      <UniqueIdentifier>{BA06E3E0-E5A3-4D29-A38D-53F5F9DEA70F}</UniqueIdentifier>
+      <UniqueIdentifier>{4482A89A-BD67-4AE4-A78A-CC7ECC850681}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Bomber_Man\Bomber_Man.Build.cs">
       <Filter>Source\Bomber_Man</Filter>
@@ -173,6 +173,12 @@
       <Filter>Source\Bomber_Man</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Bomber_Man\PlataformaElevador.h">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bomber_Man\PlataformaTrampa.cpp">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bomber_Man\PlataformaTrampa.h">
       <Filter>Source\Bomber_Man</Filter>
     </ClInclude>
   </ItemGroup>

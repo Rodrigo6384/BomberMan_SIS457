@@ -74,6 +74,7 @@ protected:
 	TArray<FVector> PosicionesValidasPersonaje;
 
 
+
 };
 
 

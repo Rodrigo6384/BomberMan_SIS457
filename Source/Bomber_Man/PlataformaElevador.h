@@ -16,18 +16,17 @@ class BOMBER_MAN_API APlataformaElevador : public APlataforma
 protected:
 	APlataformaElevador();
 	virtual void BeginPlay() override;
-public:
+protected:
 	virtual void Tick(float DeltaTime) override;
-	// Altura máxima y mínima en el eje Z
+
 	UPROPERTY(EditAnywhere)
 	float AlturaMaxima = 1500.0f;
 
 	UPROPERTY(EditAnywhere)
 	float AlturaMinima = 190.0f;
 
-	// Velocidad de movimiento
 	UPROPERTY(EditAnywhere)
-	float VelocidadMovimiento = 40.0f;
+	float VelocidadMovimiento = 100.0f;
 
 	// Dirección del movimiento (1 significa moviéndose hacia arriba, -1 hacia abajo)
 	int32 DireccionMovimiento = 1;

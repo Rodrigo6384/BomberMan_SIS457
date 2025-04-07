@@ -61,28 +61,24 @@ void EmptyLinkFunctionForGeneratedCodePlataformaElevador() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMaxima_MetaData[] = {
 		{ "Category", "PlataformaElevador" },
-		{ "Comment", "// Altura m?xima y m?nima en el eje Z\n" },
 		{ "ModuleRelativePath", "PlataformaElevador.h" },
-		{ "ToolTip", "Altura m?xima y m?nima en el eje Z" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMaxima = { "AlturaMaxima", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlataformaElevador, AlturaMaxima), METADATA_PARAMS(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMaxima_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMaxima_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMaxima = { "AlturaMaxima", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlataformaElevador, AlturaMaxima), METADATA_PARAMS(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMaxima_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMaxima_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMinima_MetaData[] = {
 		{ "Category", "PlataformaElevador" },
 		{ "ModuleRelativePath", "PlataformaElevador.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMinima = { "AlturaMinima", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlataformaElevador, AlturaMinima), METADATA_PARAMS(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMinima_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMinima_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMinima = { "AlturaMinima", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlataformaElevador, AlturaMinima), METADATA_PARAMS(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMinima_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMinima_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlataformaElevador_Statics::NewProp_VelocidadMovimiento_MetaData[] = {
 		{ "Category", "PlataformaElevador" },
-		{ "Comment", "// Velocidad de movimiento\n" },
 		{ "ModuleRelativePath", "PlataformaElevador.h" },
-		{ "ToolTip", "Velocidad de movimiento" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlataformaElevador_Statics::NewProp_VelocidadMovimiento = { "VelocidadMovimiento", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlataformaElevador, VelocidadMovimiento), METADATA_PARAMS(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_VelocidadMovimiento_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_VelocidadMovimiento_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlataformaElevador_Statics::NewProp_VelocidadMovimiento = { "VelocidadMovimiento", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlataformaElevador, VelocidadMovimiento), METADATA_PARAMS(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_VelocidadMovimiento_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlataformaElevador_Statics::NewProp_VelocidadMovimiento_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlataformaElevador_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMaxima,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlataformaElevador_Statics::NewProp_AlturaMinima,
@@ -115,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodePlataformaElevador() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlataformaElevador, 2120522589);
+	IMPLEMENT_CLASS(APlataformaElevador, 2407805774);
 	template<> BOMBER_MAN_API UClass* StaticClass<APlataformaElevador>()
 	{
 		return APlataformaElevador::StaticClass();

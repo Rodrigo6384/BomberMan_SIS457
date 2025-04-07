@@ -23,6 +23,7 @@
 #include "EnemigoAereo.h"
 #include "Plataforma.h"
 #include "PlataformaElevador.h"
+#include "PlataformaTrampa.h"
 
 
 ABomber_ManGameMode::ABomber_ManGameMode()
@@ -42,6 +43,7 @@ void ABomber_ManGameMode::BeginPlay()
 	SpawnPersonaje();
 	APlataforma* Plataforma = GetWorld()->SpawnActor<APlataforma>(APlataforma::StaticClass(), FVector(2710.0f , 1350.0f, 90.0f), FRotator::ZeroRotator);
 	APlataformaElevador* PlataformaElevador = GetWorld()->SpawnActor<APlataformaElevador>(APlataformaElevador::StaticClass(), FVector(10.0f, -1050.0f, 200.0f), FRotator::ZeroRotator);
+	APlataformaTrampa* PlataformaTrampa = GetWorld()->SpawnActor<APlataformaTrampa>(APlataformaTrampa::StaticClass(), FVector(400.0f, -1060.0f, 1470.0f), FRotator::ZeroRotator);
 };
 
 void ABomber_ManGameMode::SpawnLaberinto()
