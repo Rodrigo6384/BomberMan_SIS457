@@ -51,3 +51,5 @@ C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\PlataformaElevador.h
 C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\PlataformaElevador.generated.h
 C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\PlataformaTrampa.h
 C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\PlataformaTrampa.generated.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Source\Bomber_Man\EnemigoTerrestre.h
+C:\Users\DAVID\Desktop\SIS_457\Bomber_Man\Intermediate\Build\Win64\UE4Editor\Inc\Bomber_Man\EnemigoTerrestre.generated.h

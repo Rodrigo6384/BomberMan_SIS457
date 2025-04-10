@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Bomber_Man.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{BA2CFB56-0AB5-4D2C-85FC-9BAD200AADC5}</UniqueIdentifier>
+      <UniqueIdentifier>{26AC5F17-076E-4225-94A0-58DB96711D21}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Bomber_Man.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{5FCCB9EC-48B6-4B24-BB31-A74AFB3B0396}</UniqueIdentifier>
+      <UniqueIdentifier>{99296A02-E9A8-4AF1-A029-6DA0CF7923F8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Bomber_Man">
-      <UniqueIdentifier>{4482A89A-BD67-4AE4-A78A-CC7ECC850681}</UniqueIdentifier>
+      <UniqueIdentifier>{6229CE09-996D-449F-B1FE-FE80C33582B9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Bomber_Man\Bomber_Man.Build.cs">
       <Filter>Source\Bomber_Man</Filter>
@@ -95,6 +95,12 @@
       <Filter>Source\Bomber_Man</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Bomber_Man\EnemigoSubterraneoTopo.h">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bomber_Man\EnemigoTerrestre.cpp">
+      <Filter>Source\Bomber_Man</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bomber_Man\EnemigoTerrestre.h">
       <Filter>Source\Bomber_Man</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Bomber_Man\Muro.cpp">

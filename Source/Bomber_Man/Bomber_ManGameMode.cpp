@@ -24,6 +24,7 @@
 #include "Plataforma.h"
 #include "PlataformaElevador.h"
 #include "PlataformaTrampa.h"
+#include "EnemigoTerrestre.h"
 
 
 ABomber_ManGameMode::ABomber_ManGameMode()
@@ -42,8 +43,8 @@ void ABomber_ManGameMode::BeginPlay()
 	SpawnLaberinto();
 	SpawnPersonaje();
 	APlataforma* Plataforma = GetWorld()->SpawnActor<APlataforma>(APlataforma::StaticClass(), FVector(2710.0f , 1350.0f, 90.0f), FRotator::ZeroRotator);
-	APlataformaElevador* PlataformaElevador = GetWorld()->SpawnActor<APlataformaElevador>(APlataformaElevador::StaticClass(), FVector(10.0f, -1050.0f, 200.0f), FRotator::ZeroRotator);
-	APlataformaTrampa* PlataformaTrampa = GetWorld()->SpawnActor<APlataformaTrampa>(APlataformaTrampa::StaticClass(), FVector(400.0f, -1060.0f, 1470.0f), FRotator::ZeroRotator);
+	//APlataformaElevador* PlataformaElevador = GetWorld()->SpawnActor<APlataformaElevador>(APlataformaElevador::StaticClass(), FVector(10.0f, -1050.0f, 200.0f), FRotator::ZeroRotator);
+	//APlataformaTrampa* PlataformaTrampa = GetWorld()->SpawnActor<APlataformaTrampa>(APlataformaTrampa::StaticClass(), FVector(400.0f, -1060.0f, 1470.0f), FRotator::ZeroRotator);
 };
 
 void ABomber_ManGameMode::SpawnLaberinto()
@@ -127,6 +128,15 @@ void ABomber_ManGameMode::SpawnLaberinto()
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, TEXT("Enemigo Aereo Spawned!"));
 		};
 	};
+	for (int32 i = 15; i < 20 && i < PosicionesValidas.Num(); i++) {
+		FVector Pos = PosicionesValidas[i];
+		AEnemigoTerrestre* EnemigoTerrestre = GetWorld()->SpawnActor<AEnemigoTerrestre>(AEnemigoTerrestre::StaticClass(), Pos, FRotator::ZeroRotator);
+		if (EnemigoTerrestre)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Enemigo Terrestre Spawned!"));
+		}
+	}
+
 }
 void ABomber_ManGameMode::SpawnPersonaje()
 {

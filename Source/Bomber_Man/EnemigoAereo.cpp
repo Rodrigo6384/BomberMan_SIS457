@@ -14,6 +14,11 @@ AEnemigoAereo::AEnemigoAereo()
 	{
 		MallaEnemigo->SetStaticMesh(NuevaMalla.Object);
 	}
+	static ConstructorHelpers::FObjectFinder<UMaterial> ObjetoMaterial(TEXT("Material'/Game/StarterContent/Materials/M_Basic_Floor.M_Basic_Floor'"));
+	if (ObjetoMaterial.Succeeded())
+	{
+		MallaEnemigo->SetMaterial(0, ObjetoMaterial.Object);
+	}
 
 }
 
