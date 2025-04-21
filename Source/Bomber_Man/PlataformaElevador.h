@@ -26,10 +26,9 @@ protected:
 	float AlturaMinima = 190.0f;
 
 	UPROPERTY(EditAnywhere)
-	float VelocidadMovimiento = 100.0f;
+	float VelocidadMovimiento = 200.0f;
 
-	// Dirección del movimiento (1 significa moviéndose hacia arriba, -1 hacia abajo)
-	int32 DireccionMovimiento = 1;
+	int DireccionMovimiento = 1;
 
 	
 };

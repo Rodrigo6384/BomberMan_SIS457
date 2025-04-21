@@ -14,3 +14,11 @@ AMuroMadera::AMuroMadera()
 		MallaMuro->SetMaterial(0, ObjetoMaterial.Object);
 	}
 }
+
+void AMuroMadera::BeginPlay()
+{
+}
+
+void AMuroMadera::Tick(float DeltaTime)
+{
+}

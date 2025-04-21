@@ -21,12 +21,16 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 
-	float RangoMovimientoMinimo = 330.0f;
+	float RangoMovimientoMinimo = -1060.0f;
 
 	UPROPERTY(EditAnywhere)
 	float RangoMovimientoMaximo = 1000.0f;
 
-	float VelocidadMovimiento = 50.0f;
+	float VelocidadMovimiento = 800.0f;
+	float DestinoActualY;
+	float Tolerancia= 5.0f;
+
+	void SeleccionarNuevoDestinoAleatorio();
 
 	int32 DireccionMovimiento = 1;
 };

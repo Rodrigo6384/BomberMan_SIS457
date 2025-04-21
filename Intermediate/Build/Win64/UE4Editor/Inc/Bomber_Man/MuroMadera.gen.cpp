@@ -31,6 +31,19 @@ void EmptyLinkFunctionForGeneratedCodeMuroMadera() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AlturaMaxima_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AlturaMaxima;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AlturaMinima_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AlturaMinima;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_VelocidadMovimiento_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_VelocidadMovimiento;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -45,6 +58,32 @@ void EmptyLinkFunctionForGeneratedCodeMuroMadera() {}
 		{ "ModuleRelativePath", "MuroMadera.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMuroMadera_Statics::NewProp_AlturaMaxima_MetaData[] = {
+		{ "Category", "MuroMadera" },
+		{ "ModuleRelativePath", "MuroMadera.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMuroMadera_Statics::NewProp_AlturaMaxima = { "AlturaMaxima", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMuroMadera, AlturaMaxima), METADATA_PARAMS(Z_Construct_UClass_AMuroMadera_Statics::NewProp_AlturaMaxima_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMuroMadera_Statics::NewProp_AlturaMaxima_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMuroMadera_Statics::NewProp_AlturaMinima_MetaData[] = {
+		{ "Category", "MuroMadera" },
+		{ "ModuleRelativePath", "MuroMadera.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMuroMadera_Statics::NewProp_AlturaMinima = { "AlturaMinima", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMuroMadera, AlturaMinima), METADATA_PARAMS(Z_Construct_UClass_AMuroMadera_Statics::NewProp_AlturaMinima_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMuroMadera_Statics::NewProp_AlturaMinima_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMuroMadera_Statics::NewProp_VelocidadMovimiento_MetaData[] = {
+		{ "Category", "MuroMadera" },
+		{ "ModuleRelativePath", "MuroMadera.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMuroMadera_Statics::NewProp_VelocidadMovimiento = { "VelocidadMovimiento", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMuroMadera, VelocidadMovimiento), METADATA_PARAMS(Z_Construct_UClass_AMuroMadera_Statics::NewProp_VelocidadMovimiento_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMuroMadera_Statics::NewProp_VelocidadMovimiento_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMuroMadera_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMuroMadera_Statics::NewProp_AlturaMaxima,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMuroMadera_Statics::NewProp_AlturaMinima,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMuroMadera_Statics::NewProp_VelocidadMovimiento,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMuroMadera_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMuroMadera>::IsAbstract,
 	};
@@ -54,11 +93,11 @@ void EmptyLinkFunctionForGeneratedCodeMuroMadera() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AMuroMadera_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AMuroMadera_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AMuroMadera_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AMuroMadera_Statics::Class_MetaDataParams))
@@ -72,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeMuroMadera() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMuroMadera, 845887820);
+	IMPLEMENT_CLASS(AMuroMadera, 3464653920);
 	template<> BOMBER_MAN_API UClass* StaticClass<AMuroMadera>()
 	{
 		return AMuroMadera::StaticClass();

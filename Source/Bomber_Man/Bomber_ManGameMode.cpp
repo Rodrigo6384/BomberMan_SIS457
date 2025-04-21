@@ -35,6 +35,12 @@ ABomber_ManGameMode::ABomber_ManGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+	//--------------examen
+	MurosColocados = 0;
+	PorcentajeBloques = 40;///porcetje de bloques que se van a colocar en el laberinto
+	ZonaX = 25;
+	ZonaY = 40;
+	TotalMuros = (ZonaX * ZonaY * PorcentajeBloques) / 100;
 }
 
 void ABomber_ManGameMode::BeginPlay()
@@ -43,14 +49,56 @@ void ABomber_ManGameMode::BeginPlay()
 	SpawnLaberinto();
 	SpawnPersonaje();
 	APlataforma* Plataforma = GetWorld()->SpawnActor<APlataforma>(APlataforma::StaticClass(), FVector(2710.0f , 1350.0f, 90.0f), FRotator::ZeroRotator);
-	//APlataformaElevador* PlataformaElevador = GetWorld()->SpawnActor<APlataformaElevador>(APlataformaElevador::StaticClass(), FVector(10.0f, -1050.0f, 200.0f), FRotator::ZeroRotator);
-	//APlataformaTrampa* PlataformaTrampa = GetWorld()->SpawnActor<APlataformaTrampa>(APlataformaTrampa::StaticClass(), FVector(400.0f, -1060.0f, 1470.0f), FRotator::ZeroRotator);
+	APlataformaElevador* PlataformaElevador = GetWorld()->SpawnActor<APlataformaElevador>(APlataformaElevador::StaticClass(), FVector(10.0f, -1050.0f, 200.0f), FRotator::ZeroRotator);
+	APlataformaTrampa* PlataformaTrampa = GetWorld()->SpawnActor<APlataformaTrampa>(APlataformaTrampa::StaticClass(), FVector(400.0f, -1060.0f, 1470.0f), FRotator::ZeroRotator);
+	APlataformaTrampa* PlataformaTrampa2 = GetWorld()->SpawnActor<APlataformaTrampa>(APlataformaTrampa::StaticClass(), FVector(1200.0f, -1060.0f, 1470.0f), FRotator::ZeroRotator);
+	APlataformaTrampa* PlataformaTrampa3 = GetWorld()->SpawnActor<APlataformaTrampa>(APlataformaTrampa::StaticClass(), FVector(2000.0f, -1060.0f, 1470.0f), FRotator::ZeroRotator);
+	APlataformaTrampa* PlataformaTrampa4 = GetWorld()->SpawnActor<APlataformaTrampa>(APlataformaTrampa::StaticClass(), FVector(2800.0f, -1060.0f, 1470.0f), FRotator::ZeroRotator);
 };
 
 void ABomber_ManGameMode::SpawnLaberinto()
 {
-	PosicionesValidas.Empty();
-	// Spawnear bloques según el valor de Laberinto1
+	/*PosicionesValidas.Empty();
+	Laberinto1.SetNum(50);
+	for (int i = 0; i < 50; i++) {
+		Laberinto1[i].SetNum(50);
+		for (int j = 0; j < 50; j++) {
+			Laberinto1[i][j] = 0;
+		}
+	}
+	while (MurosColocados < TotalMuros)
+	{
+		int32 tipo = FMath::RandRange(1, 10);
+		int32 x = FMath::RandRange(1, ZonaX - 2);
+		int32 y = FMath::RandRange(1, ZonaY - 2);
+
+		if (Laberinto1[x][y] != 0)
+			continue;
+
+		bool puedecolocarse = true;
+		for (int dx = -1; dx <= 1; dx++) {
+			for (int dy = -1; dy <= 1; dy++) {
+				if (dx == 0 && dy == 0) continue;
+
+				int32 nx = x + dx;
+				int32 ny = y + dy;
+
+				if (Laberinto1[nx][ny] != 0 && Laberinto1[nx][ny] != tipo) {
+					puedecolocarse = false;
+					break;
+				}
+			}
+			if (!puedecolocarse)
+				break;
+		}
+
+		if (puedecolocarse)
+		{
+			Laberinto1[x][y] = tipo;
+			MurosColocados++;
+		}
+	}*/
+
 	for (int i = 0; i < 50; i++) {
 		for (int j = 0; j < 50; j++) {
 			FVector Posicion = FVector(110.0f + (i + 1) * 100.0f, -1250.0f + (j + 1) * 100.0f, 190.0f);
@@ -92,69 +140,81 @@ void ABomber_ManGameMode::SpawnLaberinto()
 		};
 	};
 
-	// Crear lista de posiciones válidas (donde Laberinto1[i][j] == 0)
-	for (int i = 0; i < 50; i++) {
-		for (int j = 0; j < 50; j++) {
-			if (Laberinto1[i][j] == 0) {
-				FVector Pos = FVector(110.0f + (i + 1) * 100.0f, -1250.0f + (j + 1) * 100.0f, 190.0f);
-				PosicionesValidas.Add(Pos);
-			};
-		};
-	};
-	// Mezclar posiciones aleatoriamente
-	for (int32 i = 0; i < PosicionesValidas.Num(); i++) {
-		int32 SwapIndex = FMath::RandRange(0, PosicionesValidas.Num() - 1);
-		PosicionesValidas.Swap(i, SwapIndex);
-	};
-	for (int32 i = 0; i < 5 && i < PosicionesValidas.Num(); i++) {
-		FVector Pos = PosicionesValidas[i];
-		AEnemigoSubterraneoGusano* EnemigoGusano = GetWorld()->SpawnActor<AEnemigoSubterraneoGusano>(AEnemigoSubterraneoGusano::StaticClass(), Pos, FRotator::ZeroRotator);
-		if (EnemigoGusano) {
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Gusano Spawned!"));
-		};
-	};
-	for (int32 i = 5; i < 10 && i < PosicionesValidas.Num(); i++) {
-		FVector Pos = PosicionesValidas[i];
-		AEnemigoSubterraneoTopo* EnemigoTopo = GetWorld()->SpawnActor<AEnemigoSubterraneoTopo>(AEnemigoSubterraneoTopo::StaticClass(), Pos, FRotator::ZeroRotator);
-		if (EnemigoTopo) {
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Topo Spawned!"));
-		};
-	};
-	for (int32 i = 10; i < 15 && i < PosicionesValidas.Num(); i++) {
-		FVector Pos = PosicionesValidas[i];
-		Pos.Z = 500.0f;
-		AEnemigoAereo* EnemigoAereo = GetWorld()->SpawnActor<AEnemigoAereo>(AEnemigoAereo::StaticClass(), Pos, FRotator::ZeroRotator);
-		if (EnemigoAereo) {
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, TEXT("Enemigo Aereo Spawned!"));
-		};
-	};
-	for (int32 i = 15; i < 20 && i < PosicionesValidas.Num(); i++) {
-		FVector Pos = PosicionesValidas[i];
-		AEnemigoTerrestre* EnemigoTerrestre = GetWorld()->SpawnActor<AEnemigoTerrestre>(AEnemigoTerrestre::StaticClass(), Pos, FRotator::ZeroRotator);
-		if (EnemigoTerrestre)
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Enemigo Terrestre Spawned!"));
-		}
-	}
+	//for (int i = 0; i < 50; i++) {
+	//	for (int j = 0; j < 50; j++) {
+	//		if (Laberinto1[i][j] == 0) {
+	//			FVector Pos = FVector(110.0f + (i + 1) * 100.0f, -1250.0f + (j + 1) * 100.0f, 190.0f);
+	//			PosicionesValidas.Add(Pos);
+	//		};
+	//	};
+	//};
+
+	//for (int32 i = 0; i < PosicionesValidas.Num(); i++) {
+	//	int32 SwapIndex = FMath::RandRange(0, PosicionesValidas.Num() - 1);
+	//	PosicionesValidas.Swap(i, SwapIndex);
+	//};
+	//for (int32 i = 0; i < 5 && i < PosicionesValidas.Num(); i++) {
+	//	FVector Pos = PosicionesValidas[i];
+	//	AEnemigoSubterraneoGusano* EnemigoGusano = GetWorld()->SpawnActor<AEnemigoSubterraneoGusano>(AEnemigoSubterraneoGusano::StaticClass(), Pos, FRotator::ZeroRotator);
+	//	if (EnemigoGusano) {
+	//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Gusano Spawned!"));
+	//	};
+	//};
+	//for (int32 i = 5; i < 10 && i < PosicionesValidas.Num(); i++) {
+	//	FVector Pos = PosicionesValidas[i];
+	//	AEnemigoSubterraneoTopo* EnemigoTopo = GetWorld()->SpawnActor<AEnemigoSubterraneoTopo>(AEnemigoSubterraneoTopo::StaticClass(), Pos, FRotator::ZeroRotator);
+	//	if (EnemigoTopo) {
+	//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Topo Spawned!"));
+	//	};
+	//};
+	//for (int32 i = 10; i < 15 && i < PosicionesValidas.Num(); i++) {
+	//	FVector Pos = PosicionesValidas[i];
+	//	Pos.Z = 500.0f;
+	//	AEnemigoAereo* EnemigoAereo = GetWorld()->SpawnActor<AEnemigoAereo>(AEnemigoAereo::StaticClass(), Pos, FRotator::ZeroRotator);
+	//	if (EnemigoAereo) {
+	//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, TEXT("Enemigo Aereo Spawned!"));
+	//	};
+	//};
+	//for (int32 i = 15; i < 20 && i < PosicionesValidas.Num(); i++) {
+	//	FVector Pos = PosicionesValidas[i];
+	//	AEnemigoTerrestre* EnemigoTerrestre = GetWorld()->SpawnActor<AEnemigoTerrestre>(AEnemigoTerrestre::StaticClass(), Pos, FRotator::ZeroRotator);
+	//	if (EnemigoTerrestre)
+	//	{
+	//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Enemigo Terrestre Spawned!"));
+	//	}
+	//}
 
 }
 void ABomber_ManGameMode::SpawnPersonaje()
 {
-	PosicionesValidasPersonaje.Empty();
-	for (int i = 1; i <= 50; i++) {
-		for (int j = 1; j <= 50; j++) {
-			if (Laberinto1[i - 1][j - 1] == 0) {
-				FVector Pos = FVector(110.0f + i * 100.0f, -1250.0f + j * 100.0f, 190.0f);
-				PosicionesValidasPersonaje.Add(Pos);
+	int MinDistanciaAlBorde = 9999;
+
+	for (int i = 0; i < 50; i++) {
+		for (int j = 0; j < 50; j++) {
+			if (Laberinto1[i][j] == 3)
+			{
+				int DistanciaAlBorde = FMath::Min3(i, j, FMath::Min(49 - i, 49 - j));
+
+				if (DistanciaAlBorde < MinDistanciaAlBorde)
+				{
+					MinDistanciaAlBorde = DistanciaAlBorde;
+					PosicionesMaderaCercanasAlBorde.Empty();
+					FVector Pos = FVector(110.0f + (i + 1) * 100.0f, -1250.0f + (j + 1) * 100.0f, 500.0f);
+					PosicionesMaderaCercanasAlBorde.Add(Pos);
+				}
+				else if (DistanciaAlBorde == MinDistanciaAlBorde)
+				{
+					FVector Pos = FVector(110.0f + (i + 1) * 100.0f, -1250.0f + (j + 1) * 100.0f, 500.0f);
+					PosicionesMaderaCercanasAlBorde.Add(Pos);
+				}
 			};
 		};
 	};
 
-	// Elegir una posición aleatoria
-	if (PosicionesValidasPersonaje.Num() > 0)
+	if (PosicionesMaderaCercanasAlBorde.Num() > 0)
 	{
-		int32 Index = FMath::RandRange(0, PosicionesValidasPersonaje.Num() - 1);
-		FVector SpawnLocation = PosicionesValidasPersonaje[Index];
+		int32 Index = FMath::RandRange(0, PosicionesMaderaCercanasAlBorde.Num() - 1);
+		FVector SpawnLocation = PosicionesMaderaCercanasAlBorde[Index];
 		APlayerController* PC = GetWorld()->GetFirstPlayerController();
 		if (PC)
 		{
@@ -169,9 +229,8 @@ void ABomber_ManGameMode::SpawnPersonaje()
 				if (NuevoPersonaje)
 				{
 					PC->Possess(NuevoPersonaje);
-				};
-			};
-		};
-
-	};
+				}
+			}
+		}
+	}
 };

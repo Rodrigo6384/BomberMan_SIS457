@@ -58,7 +58,12 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMuroMadera)
 
 
-#define Bomber_Man_Source_Bomber_Man_MuroMadera_h_15_PRIVATE_PROPERTY_OFFSET
+#define Bomber_Man_Source_Bomber_Man_MuroMadera_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__AlturaMaxima() { return STRUCT_OFFSET(AMuroMadera, AlturaMaxima); } \
+	FORCEINLINE static uint32 __PPO__AlturaMinima() { return STRUCT_OFFSET(AMuroMadera, AlturaMinima); } \
+	FORCEINLINE static uint32 __PPO__VelocidadMovimiento() { return STRUCT_OFFSET(AMuroMadera, VelocidadMovimiento); }
+
+
 #define Bomber_Man_Source_Bomber_Man_MuroMadera_h_12_PROLOG
 #define Bomber_Man_Source_Bomber_Man_MuroMadera_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
